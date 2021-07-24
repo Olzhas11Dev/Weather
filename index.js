@@ -33,4 +33,5 @@ function putPic (index){
             e.style.display = 'none';
         }
     pics[index].style.display = 'block';
+    
 }
