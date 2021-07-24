@@ -1,11 +1,11 @@
-const input = document.querySelector('.input');
-const button = document.querySelector('.btn');
-let cityName = document.querySelector('.cityName');
-let weatherDescription = document.querySelector('.weatherDes');
-let temperature = document.querySelector('.temperature');
-let pics = document.querySelectorAll('img');
-let picDefault = document.querySelector('.sunny');
-picDefault.style.display = 'block';
+const input = document.querySelector('.input')
+const button = document.querySelector('.btn')
+let cityName = document.querySelector('.cityName')
+let weatherDescription = document.querySelector('.weatherDes')
+let temperature = document.querySelector('.temperature')
+let pics = document.querySelectorAll('img')
+let picDefault = document.querySelector('.sunny')
+picDefault.style.display = 'block'
 
 button.addEventListener('click',()=>{
    $.get(`http://api.openweathermap.org/data/2.5/weather?q=${input.value}&appid=1ad8fa60f2122f524186b8d1d1ba94ad&units=metric`,(response)=>{
